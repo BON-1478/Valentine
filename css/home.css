@@ -8,6 +8,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="pink"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>') 12 12, auto;
     overflow: hidden;
@@ -309,7 +310,6 @@ body{
     position: absolute;
     transform: translateY(-46%);
     top: 50%;
-
 }
 
 #card1, #card2, #card3, #card4{
@@ -331,6 +331,13 @@ body{
     font-family: Pacifico;
     font-size: 25px;
     font-weight: lighter;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
 }
 .overlay{
     position: fixed;
